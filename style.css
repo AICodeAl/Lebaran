@@ -3,7 +3,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-top: 10px; /* mengurangi margin untuk tampilan yang lebih kecil */
+  margin-top: 0px; /* mengurangi margin untuk tampilan yang lebih kecil */
 }
 
 canvas {
