@@ -48,7 +48,7 @@ h1 {
   font-weight: bold;
   font-family: fontsaya;  
   color: #be8c17; 
-  transition: color 0.3s ease-in-out;
+  transition: color 0.1s ease-in-out;
 }
 
 h1:hover {
