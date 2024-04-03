@@ -3,7 +3,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-top: 0px; /* mengurangi margin untuk tampilan yang lebih kecil */
+  margin-top: 10px; /* mengurangi margin untuk tampilan yang lebih kecil */
 }
 
 canvas {
@@ -18,7 +18,7 @@ canvas {
   left: 0;
   z-index: -1;
   opacity: 0.2;
-  width: 300px;
+  width: 800px;
 }
 
 .gambar-kanan {
@@ -27,11 +27,11 @@ canvas {
   right: 0;
   z-index: -1;
   opacity: 0.2;
-  width: 300px;
+  width: 800px;
 }
 
 .gambar-bawah {
-  position: absolute;
+  position: fixed;
   bottom: 0;
   left: 50%;
   transform: translateX(-50%);
@@ -44,7 +44,7 @@ canvas {
 }
 
 h1 {
-  font-size: 40px; 
+  font-size: 25px; 
   font-weight: bold;
   font-family: fontsaya;  
   color: #be8c17; 
@@ -52,11 +52,11 @@ h1 {
 }
 
 h1:hover {
-  color: #1976D2; 
+  color: #be8c17; 
 }
 
 body {
   margin: 0;
   background: #FFFFFF;
   cursor: pointer;
-}
+  }
