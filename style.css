@@ -3,7 +3,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-top: 20px; /* mengurangi margin untuk tampilan yang lebih kecil */
+  margin-top: 10px; /* mengurangi margin untuk tampilan yang lebih kecil */
 }
 
 canvas {
@@ -44,7 +44,7 @@ canvas {
 }
 
 h1 {
-  font-size: 30px; 
+  font-size: 32px; 
   font-weight: bold;
   font-family: fontsaya;  
   color: #be8c17; 
