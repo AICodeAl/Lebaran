@@ -1,5 +1,4 @@
 .wrapper {
-  position: absolute;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -14,7 +13,7 @@ canvas {
   z-index: -1; 
 }
 .gambar-kiri {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   z-index: -1;
@@ -23,7 +22,7 @@ canvas {
 }
 
 .gambar-kanan {
-  position: absolute;
+  position: fixed;
   top: 0;
   right: 0;
   z-index: -1;
