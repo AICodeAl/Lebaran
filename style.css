@@ -2,21 +2,42 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: flex-start; /* Mengatur konten agar ditampilkan di tengah atas */
-  margin-top: 10px; /* mengurangi margin untuk tampilan yang lebih kecil */
+  justify-content: center;
+  margin-top: 0px; /* mengurangi margin untuk tampilan yang lebih kecil */
 }
 
-.gambar-kiri, .gambar-kanan {
+canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1; 
+}
+.gambar-kiri {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
   opacity: 0.2;
-  width: 800px;
+  width: 200px;
+}
+
+.gambar-kanan {
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: -1;
+  opacity: 0.2;
+  width: 200px;
 }
 
 .gambar-bawah {
-  position: absolute; /* Mengubah menjadi absolute agar bisa diposisikan dengan tepat */
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  z-index: 1;
+  width: 100%; /* Lebar gambar bawah diatur 100% agar memenuhi lebar layar */
+  position: absolute; /* Atur ulang posisi gambar bawah menjadi relatif */
+  top: auto; /* Nolkan top */
+  bottom: 0; /* Letakkan gambar bawah di bagian bawah */
+  transform: none; /* Hapus transformasi */
+  margin: 0; /* Nolkan margin */
+  z-index: 1; /* Atur z-index sesuai kebutuhan */
 }
 
 @font-face {
@@ -25,19 +46,26 @@
 }
 
 h1 {
-  font-size: 25px;
+  font-size: 24px; 
   font-weight: bold;
-  font-family: fontsaya;
-  color: #be8c17;
+  font-family: fontsaya;  
+  color: #be8c17; 
   transition: color 0.1s ease-in-out;
 }
 
 h1:hover {
-  color: #be8c17;
+  color: #1976D2; 
 }
 
 body {
   margin: 0;
   background: #FFFFFF;
   cursor: pointer;
+}
+
+@media screen and (max-width: 600px) {
+  #content, aside {
+    width: 100%;
+    padding: 0;
+  }
 }
